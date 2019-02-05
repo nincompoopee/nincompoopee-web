@@ -24,7 +24,7 @@ const map = new mapboxgl.Map({
 });
 map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['Venues'] // replace this with the name of the layer
+    layers: ['venuesnames']
   });
 
   if (!features.length) {
