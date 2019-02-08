@@ -31,7 +31,7 @@ map.on('click', function(e) {
     return;
   }
   var feature = features[0];
-  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+  var popup = new mapboxgl.Popup({ offset: [-25, -20] })
     .setLngLat(feature.geometry.coordinates)
     .setHTML('<h3>' + feature.properties.Callit + '</h3><p>' + feature.properties.ComeFor + '</p>')
     .setLngLat(feature.geometry.coordinates)
